@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>I believe that there are many bugs</title>
+</head>
+<body>
+    <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="get">
+        Intent:<input type="text" th:field="*{intent}"/>
+        <input type="submit" value="ADD" /><br><br>
+        Sentence:<textarea id="sentence"></textarea>
+
+
+    </form>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        var t = document.getElementById("sentence");
+
+    </script>
+</body>
+</html>
